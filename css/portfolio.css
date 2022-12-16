@@ -1,0 +1,26 @@
+.grey-bg {
+    background-color: #f5f7fa;
+  }
+  /* xtra added css */
+  .portfolio
+  {
+    /* margin-top: -1325px; */
+  }
+  @media only screen and (max-width: 767px)
+  {
+    .xtraclass
+    {
+        margin-top: 539px;
+    }
+    .portfolio
+    {
+      margin-top: -736px;
+    }
+  }
+  @media only screen and (min-width: 767px)
+  {
+    .footer
+    {
+        height:fit-content;
+    }
+  }

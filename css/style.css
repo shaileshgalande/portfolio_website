@@ -1,0 +1,123 @@
+.landing-page{
+    height: fit-content;
+    margin-top: 90px;
+}
+.landing-page, .sides {
+    width: 100%;
+    height: fit-content;
+}
+.landing-page .sides {
+    display: flex;
+    height: fit-content;
+}
+.landing-page .sides .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page .sides .left h1{
+    font-size: 60px;
+}
+
+.landing-page .sides .left p{
+    width: 80%;
+    text-align: center;
+    
+}
+
+.landing-page .sides .left a{
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
+}
+
+.landing-page .sides .left a:hover{
+    background: black;
+    color : white;
+    transition: all 0.3s ease-in-out;
+}
+.landing-page .sides .right{
+    width: 50%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-page .sides .right img{
+    margin-top: 50px;
+    width: 100%;
+    height: fit-content;
+}
+.qualification .block{
+    width: 50%;
+    padding: 50px 50px;
+}
+.qualification{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.qualification h2 {
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 880px) {
+    .landing-page .sides{
+        margin-top: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-page .sides .left, .landing-page .sides .right {
+        width: 50%;
+        height: fit-content;
+        padding-top: 30px;
+    }
+    .landing-page .sides .left h1{
+        font-size: 36px;
+    }
+    .landing-page .sides .left{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .qualification {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .qualification .block{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 341px) {
+    .landing-page .sides{
+        margin-top: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-page .sides .left, .landing-page .sides .right {
+        width: 100%;
+        height: fit-content;
+    }
+    .landing-page .sides .left h1{
+        font-size: 40px;
+    }
+    .landing-page .sides .left{
+        padding-top: 30px;
+    }
+    .qualification {
+        flex-direction: column;
+    }
+    .qualification .block{
+        width: 100%;
+        padding: 20px;
+    }
+}
